@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class Switch {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        // String fruit = sc.nextLine();
+        String fruit = sc.nextLine();
 
-        // switch (fruit) {
-        // case "Mango":
-        // System.out.println("Mongo is awesome");
-        // break;
-        // case "Apple":
-        // System.out.println("Mongo is sweet");
-        // break;
-        // case "Orange":
-        // System.out.println("Orange is soury");
-        // break;
-        // default:
-        // break;
-        // }
+        switch (fruit) {
+            case "Mango":
+                System.out.println("Mongo is awesome");
+                break;
+            case "Apple":
+                System.out.println("Mongo is sweet");
+                break;
+            case "Orange":
+                System.out.println("Orange is soury");
+                break;
+            default:
+                break;
+        }
 
         System.out.print("Enter a number for day: ");
         int day = sc.nextInt();
@@ -46,6 +46,11 @@ public class Switch {
             default:
                 System.out.println("Its alien day");
                 break;
+        }
+
+        switch (day) {
+            case 1, 2, 3, 4, 5 -> System.out.println("Weekdaya");
+            case 6, 7 -> System.out.println("Weekends");
         }
     }
 }
